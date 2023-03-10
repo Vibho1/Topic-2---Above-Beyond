@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Above and beyond - Smart Lighting Application" />
+    <meta name="author" content="Vibho" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+    <title>Smart Lighting Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="light-control">
+        <h1 id="h1">Smart Lighting Application</h1>
+        <br>
+        <p id="demo"></p>
+        <br>
+        <h3 id="home">My Smart Home</h3>
+        <br>
+        <div class="light-selector">
+            <label for="light1">Bedroom Light </label>
+            <button onclick="myFunction()">Click me</button>
+            <input type="checkbox" id="light1">
+            <div class="color-selector">
+                <label for="color1">Color</label>
+                <input type="color" id="color1" value="#ff0000">
+            </div>
+            <div class="bulb" id="bulb1"></div>
+        </div>
+        <br>
+        <div class="light-selector">
+            <label for="light2">Living Room Light</label>
+            <button onclick="myFunction1()">Click me</button>
+            <input type="checkbox" id="light2">
+            <div class="color-selector">
+                <label for="color2">Color</label>
+                <input type="color" id="color2" value="#00ff00">
+            </div>
+            <div class="bulb" id="bulb2"></div>
+        </div>
+        <br>
+        <div class="light-selector">
+            <label for="light3">Garden Light</label>
+            <button onclick="myFunction2()">Click me</button>
+            <input type="checkbox" id="light3">
+            <div class="color-selector">
+                <label for="color3">Color</label>
+                <input type="color" id="color3" value="#0000ff">
+            </div>
+            <div class="bulb" id="bulb3"></div>
+        </div>
+        <br>
+        <div class="light-selector">
+            <label for="light4">Kitchen Light </label>
+            <button onclick="myFunction3()">Click me</button>
+            <input type="checkbox" id="light4">
+            <div class="color-selector">
+                <label for="color4">Color</label>
+                <input type="color" id="color4" value="#ff0000">
+            </div>
+            <div class="bulb" id="bulb4"></div>
+        </div>
+        <br>
+
+        <div class="light-selector">
+            <label for="light5">Restroom Light </label>
+            <button onclick="myFunction4()">Click me</button>
+            <input type="checkbox" id="light5">
+            <div class="color-selector">
+                <label for="color5">Color</label>
+                <input type="color" id="color5" value="#ff0000">
+            </div>
+            <div class="bulb" id="bulb5"></div>
+        </div>
+        <br>
+        <br>
+
+    </div>
+
+    <div class="container my-5">
+
+        <footer
+            style="background-color: #050505; margin-left: -182px; margin-right: -181px; margin-bottom: -49px;">
+            <div class="container p-4">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 mb-4">
+                        <h5 class="mb-3" style="letter-spacing: 2px; color: #818963;">Feel free to ask </h5>
+                        <p id="paracontact">
+                            In any case, you can ask us on our provided contact details<br><br><strong>Email-
+                            </strong>
+                            <a class="text-light"
+                                href="mailto:vibho4797.be21@chitkara.edu.in">vibho4797.be21@chitkara.edu.in</a>
+                            <br><strong>Contact Number</strong> - +91 7901734613
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h5 class="mb-3" style="letter-spacing: 2px; color: #818963;">Above & Beyond</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-1">
+                                <a href="#!" style="color: #aa0606;">Frequently Asked Questions</a>
+                            </li>
+                            <li class="mb-1">
+                                <a href="#!" style="color: #aa0606;">Type of Light</a>
+                            </li>
+                            <li class="mb-1">
+                                <a href="#!" style="color: #aa0606;">Pricing</a>
+                            </li>
+                            <li>
+                                <a href="#!" style="color: #aa0606;">Quality of Light</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h5 class="mb-1" style="letter-spacing: 2px; color: #818963;">Our visiting hours</h5>
+                        <table class="table" style="color: #aa0606; border-color: #666;">
+                            <tbody>
+                                <tr>
+                                    <td>Mon - Fri:</td>
+                                    <td>8am - 9pm</td>
+                                </tr>
+                                <tr>
+                                    <td>Sat - Sun:</td>
+                                    <td>8am - 1am</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+              <p id ="copyr">  © 2023 Copyright: </p>
+                <a class="text-light"
+                    href="https://www.linkedin.com/in/vibho-sharma-5245b3239/">Vibho:LinkedIn</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
